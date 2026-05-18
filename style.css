@@ -1,0 +1,676 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.911);
+}
+
+nav img{
+    width: 250px;
+    margin-left: 60px;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #475569;
+    font-size: 14px;
+    font-weight: 800;
+    transition: 0.25s ease;
+}
+
+nav a:hover {
+    color: #8b5cf6;
+}
+
+#home{
+    color: #8b5cf6;
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 34px;
+    cursor: pointer;
+    font-weight: 900;
+    color: #0f172a;
+    transition: 0.3s ease;
+    z-index: 1001;
+}
+
+.menu-btn:hover {
+    color: #8b5cf6;
+    transform: scale(1.08);
+}
+
+
+main{
+    background: radial-gradient(circle at 80% 15%, rgba(6, 182, 212, 0.35), transparent 32%),
+                radial-gradient(circle at 55% 80%, rgba(139, 92, 246, 0.38), transparent 35%),
+                linear-gradient(135deg, #080d1d 0%, #141b3d 48%, #34195d 100%);
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+    color: white;
+}
+
+.academyInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.academyContent{
+    width: 600px;
+}
+
+.academyBadge{
+    background-color: rgba(255,255,255,0.1);
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.academyContent h1{
+    font-size: 60px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.academyContent span{
+    color: #60a5fa;
+}
+
+.academyContent p{
+    font-size: 18px;
+    color: #cbd5e1;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+.actions{
+    display: flex;
+    gap: 20px;
+}
+
+.btn{
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#exploreBtn {
+    background: linear-gradient(135deg, #8b5cf6, #06b6d4);
+    box-shadow: 1px 2px 3px 2px black;
+    color: white;
+}
+
+#exploreBtn:hover{
+    box-shadow: none;
+}
+
+#programsBtn{
+    border: 1px solid rgba(255,255,255,0.2);
+    color: white;
+}
+
+#programsBtn:hover{
+    background-color: rgba(255,255,255,0.1);
+}
+
+#logo{
+    background: rgba(255,255,255,0.05);
+    padding: 30px;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    animation: floatLogo 3s ease-in-out infinite;
+}
+
+@keyframes floatLogo{
+    0%, 100%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-18px);
+    }
+}
+
+#logo img{
+    width: 350px;
+}
+
+#service-cards {
+    display: flex;
+    background: linear-gradient(rgb(255, 255, 255), #a5a5a5, rgb(255, 255, 255) 100%);
+    margin: 30px 0px;
+}
+
+section{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #6f6f6fb6;
+    border-radius: 30px;
+    width: 170px;
+    height: 350px;
+    padding: 20px;
+    margin-left: 45px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s;
+}
+
+section:hover{
+    margin-top: -2px;
+}
+
+section img{
+    width: 90%;
+}
+
+section h1{
+    font-size: 18px;
+    color: black;
+    margin: 5px;
+}
+
+section p{
+    text-align: center;
+    margin-right: 5px;
+    color: rgba(136, 136, 136, 0.905);
+}
+
+
+#startLearning{
+    background: radial-gradient(circle at 80% 15%, rgba(6, 182, 212, 0.35), transparent 32%),
+                radial-gradient(circle at 55% 80%, rgba(139, 92, 246, 0.38), transparent 35%),
+                linear-gradient(135deg, #080d1d 0%, #141b3d 48%, #34195d 100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    margin: 47px;
+    border-radius: 50px;
+    width: 90%;
+    height: 75vh;
+}
+
+#whatToLearn{
+    width: 400px;
+    margin-left: 0px;
+}
+
+#getStarted button{
+    background: linear-gradient(135deg, #8b5cf6, #06b6d4);
+    padding: 15px 40px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 5px 7px 30px black;
+    cursor: pointer;
+    transition: 0.5s;
+    color: aliceblue;
+    font-weight: 600;
+    width: 210px;
+    height: 50px;
+}
+
+#getStarted button:hover{
+    box-shadow: none;
+}
+
+#whatToLearn h1{
+    font-size: 35px;
+}
+
+#whatToLearn p{
+    font-size: 15px;
+}
+
+        
+#features{
+    width: 100%;
+    height: 650px;
+    display: flex;
+}
+
+#moreFeatures{
+    width: 100%;
+    height: 650px;
+    display: flex;
+}
+
+.contentIMG img{
+    width: 400px;
+    margin: 200px 100px;
+}
+
+.aboutFeatures{
+    margin: 90px 50px;
+    width: 350px;
+}
+
+.aboutFeatures b{
+    color: #6E90AC;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.aboutFeatures h1{
+        font-size: 25px;
+}
+
+.aboutFeatures p{
+    font-size: 15px;
+    color: rgb(103, 103, 103);
+}
+
+.aboutus{
+    display: flex;
+    gap: 20px;
+}
+
+.aboutus img{
+    width: 100px;
+}
+
+.aboutus h1{
+    font-size: 15px;
+}
+
+.aboutus p{
+    font-size: 14px;
+}
+
+
+#bookAMeet{
+    background: radial-gradient(circle at 80% 15%, rgba(6, 182, 212, 0.35), transparent 32%),
+                radial-gradient(circle at 55% 80%, rgba(139, 92, 246, 0.38), transparent 35%),
+                linear-gradient(135deg, #080d1d 0%, #141b3d 48%, #34195d 100%);
+    color: white;
+    width: 90%;
+    margin: 47px;
+    border-radius: 50px;
+    height: 90vh;
+}
+
+#howWeHelp{
+    text-align: center;
+    padding: 100px;
+}
+
+#howWeHelp b{
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.823);
+}
+
+#howWeHelp p{
+    color: rgba(255, 255, 255, 0.689);
+}
+
+#howWeHelp button{
+    background: linear-gradient(135deg, #8b5cf6, #06b6d4);
+    padding: 15px 40px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 5px 7px 30px black;
+    cursor: pointer;
+    transition: 0.5s;
+    color: aliceblue;
+    font-weight: 600;
+    width: 210px;
+    height: 50px;
+}
+
+#howWeHelp button:hover{
+    box-shadow: none;
+}
+
+
+#courses{
+    text-align: center;
+    padding: 70px;
+    background: linear-gradient(rgb(255, 255, 255), #a5a5a5, rgb(255, 255, 255) 100%);
+}
+
+#courses b{
+    color: #090e29;
+    font-size: 14px;
+    font-weight: 600;         
+}
+
+#courses h1{
+    color: #131b49;
+}
+
+#course-cards{
+    display: flex;
+    gap: 20px;
+}
+        
+#course-cards div{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #6f6f6fb6;
+    border-radius: 30px;
+    width: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s;
+}
+
+#course-cards img{
+    width: 250px;
+    border-radius: 30px;
+}
+
+#course-cards p{
+    color: #6E90AC;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+#course-cards a{
+    text-decoration: none;
+    color:rgb(14, 16, 62);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#course-cards a:hover{
+    text-decoration: underline;
+}
+
+#course-cards button{
+    border: none;
+    background: linear-gradient(135deg, #8b5cf6, #06b6d4);
+    color: aliceblue;
+    font-weight: 600;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#course-cards button:hover{
+    transform: rotate(90deg) scale(1.08);
+}
+
+#contactInfo{
+    background: radial-gradient(circle at 80% 15%, rgba(6, 182, 212, 0.35), transparent 32%),
+                radial-gradient(circle at 55% 80%, rgba(139, 92, 246, 0.38), transparent 35%),
+                linear-gradient(135deg, #080d1d 0%, #141b3d 48%, #34195d 100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 60vh;
+}
+
+#contactInfo a{
+    text-decoration: none;
+    color: rgb(213, 213, 213);
+    font-size: 13px;
+}
+
+#contactInfo a:hover{
+    text-decoration: underline;
+}
+
+#contactInfo p{
+    color: rgb(209, 209, 209);
+    font-size: 13px;
+}
+
+        
+footer{
+    width: 1087px;
+    height: 15vh;
+    background: #070b15;
+    text-align: center;
+    margin: -20px;
+}
+
+footer p{
+    color: rgb(194, 194, 194);
+    font-size: 17px;
+}
+
+@media (max-width: 1024px) {
+    nav img {
+        margin-left: 20px;
+        width: 180px;
+    }
+
+    nav div {
+        margin-right: 30px;
+        gap: 20px;
+    }
+
+    main {
+        padding: 40px;
+        min-height: auto;
+    }
+
+    .academyInfo {
+        gap: 40px;
+    }
+
+    .academyContent {
+        width: 50%;
+    }
+
+    .academyContent h1 {
+        font-size: 35px;
+    }
+
+    #logo img {
+        width: 300px;
+    }
+
+    #service-cards,
+    #course-cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #features,
+    #moreFeatures {
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contentIMG img {
+        margin: 80px 30px;
+        width: 320px;
+    }
+
+    footer {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    nav div {
+        position: absolute;
+        top: 78px;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        background: white;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 22px;
+        gap: 18px;
+        display: none;
+        border-radius: 0 0 22px 22px;
+        border: 1px solid #e5e7eb;
+        box-shadow: 0 18px 35px rgba(0,0,0,0.12);
+    }
+
+    nav div.active {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    main {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .academyInfo {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .academyContent {
+        width: 100%;
+    }
+
+    .academyContent h1 {
+        font-size: 35px;
+    }
+
+    .actions {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #logo img {
+        width: 260px;
+    }
+
+    #service-cards,
+    #course-cards,
+    #startLearning,
+    #features,
+    #moreFeatures,
+    #contactInfo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #moreFeatures {
+        flex-direction: column-reverse;
+    }
+
+    section {
+        width: 75%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    #startLearning,
+    #bookAMeet {
+        width: 90%;
+        height: auto;
+        margin: 30px auto;
+        padding: 35px 0;
+    }
+
+    #whatToLearn,
+    .aboutFeatures {
+        width: 85%;
+        margin: 40px 0;
+    }
+
+    .aboutus {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contentIMG img {
+        width: 280px;
+        margin: 50px 0;
+    }
+
+    #course-cards div {
+        width: 90%;
+    }
+
+    #course-cards img {
+        width: 100%;
+    }
+
+    #contactInfo {
+        height: auto;
+        padding: 40px 0;
+        gap: 25px;
+    }
+
+    footer {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .academyContent h1 {
+        font-size: 27px;
+    }
+
+    #whatToLearn h1 {
+        font-size: 27px;
+    }
+
+    .aboutFeatures h1 {
+        font-size: 22px;
+    }
+
+    #logo img {
+        width: 230px;
+    }
+
+    .btn,
+    #getStarted button,
+    #howWeHelp button {
+        width: 150px;
+        padding: 13px 20px;
+    }
+
+    section {
+        width: 85%;
+    }
+}
