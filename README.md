@@ -50,7 +50,7 @@ Nexora Academy/
 ---
 ## Live Demo
 
-🔗 Live Website: https://your-live-demo-link.com
+🔗 https://nexora-academy.xo.je/
 
 ## Preview
 
