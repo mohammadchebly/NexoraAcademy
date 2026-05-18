@@ -54,7 +54,7 @@ Nexora Academy/
 
 ## Preview
 
-nexora.png
+![Nexora Academy Preview](nexora.png)
 
 ## Author
 
